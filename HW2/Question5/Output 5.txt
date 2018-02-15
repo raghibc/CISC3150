@@ -1,0 +1,11 @@
+Give me some values separated by commas not spaces
+673,53,184,47,267,64,98,75,43
+673
+53
+184
+47
+267
+64
+98
+75
+43

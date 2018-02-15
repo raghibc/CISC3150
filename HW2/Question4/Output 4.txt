@@ -1,0 +1,26 @@
+Figure out why the following two pieces of code produce different outputs. 
+MAKE SURE YOU CITE YOUR SOURCE FOR THE ANSWER TO THIS QUESTION.
+
+int x = 4282;
+for(int i=0;i<35;i++){
+	System.out.printf("%d\t\t%32s\n",i,Integer.toBinaryString(x>>>i);
+}
+
+VS
+
+int x = 4282;
+for(int i=0;i<35;i++){
+	System.out.printf("%d\t\t%32s\n",i,Integer.toBinaryString(x));
+	x = x >>> i;
+}
+
+*/
+
+
+The reason that the two pieces of code produce different outputs is because in the first 
+piece of code the value of x always remains 4282 so it's binary string is shifted by an increment value of one each time through the loop. So for example as the loop goes from i = 2 to i = 3, the binary string of 4282 is shifted twice to the right and printed, then the binary string of 4282 is shifted three times to the right and printed.
+
+The second piece of code differs in that the value of x is changed as it goes through the loop. Due to the line of code ( x = x >>> i ) the value of x becomes the shifted value. The original x value is not shifted each time and printed like the previous piece of code. So for example as the loop goes from i = 2 to i = 3, the binary string of the current value of x is printed and then shifted twice to the right and x becomes that value. The binary string of that x is then printed and shifted three times to the right and x becomes that value. X never returns to the value of 4282. 
+
+
+Source: http://www.xyzws.com/Javafaq/how-do-the-bitwise-shift-operators-work/12

@@ -1,0 +1,6 @@
+In our class, we talked about how the Scanner class doesn't have a method 
+for tokenizing individual characters. But you're hell bent on forcing the 
+Scanner class to tokenize the individual characters. What should you set 
+your delimiter to?
+
+You can use the string.replace(old char, new char) method and replace any instances of the individual character with a delimiter such as a comma. You can then use the Scanner class delimiter method and set the delimiter to comma to tokenize the individual characters.
