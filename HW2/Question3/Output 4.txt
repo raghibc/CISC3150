@@ -1,0 +1,4 @@
+GIve me a string
+madamimadam
+It is a palindrome
+
