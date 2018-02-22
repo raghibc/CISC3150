@@ -1,0 +1,11 @@
+Give me a word with at least eight letters
+inheritance
+Character at pos 3: e
+Length: 11
+Substring -- 3 characters from pos 5: ita
+To lowercase: inheritance
+To uppercase: INHERITANCE
+Get mystring: inheritance
+toString:  inheritance
+value of 4241: 4241
+compare inheritance to the word encapsulation: 4
