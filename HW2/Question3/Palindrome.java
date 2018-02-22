@@ -1,4 +1,4 @@
-package javaWork;
+ package javaWork;
 
 import java.util.Scanner;
 
@@ -8,6 +8,7 @@ public class Palindrome {
 	{
 		String line = "";
 		Scanner sc = new Scanner(System.in);
+		boolean palin = false;
 		
 		System.out.println("GIve me a string");
 		line = sc.nextLine();
@@ -24,15 +25,19 @@ public class Palindrome {
 				if(line.charAt(start) == line.charAt(end))
 				{
 					start++;
-				}
-				
-				else
 					end--;
+					palin = true;
+				}
+				else
+				{
+					palin = false;
+					x = midVal;
+				}
 				
 		}			
 			
 		
-		if(x == midVal + 1)
+		if(palin)
 			System.out.println("It is a palindrome");
 		else
 			System.out.println("This is not a palindrome");
@@ -46,3 +51,4 @@ public class Palindrome {
 	
 	
 }
+
