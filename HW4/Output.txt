@@ -1,0 +1,52 @@
+How many rows will your array have?
+3
+Give me the length of ch[0]
+2
+Give me the letters in ch[0]
+a
+b
+Give me the length of ch[1]
+3
+Give me the letters in ch[1]
+c
+d
+e
+Give me the length of ch[2]
+4
+Give me the letters in ch[2]
+f
+g
+h
+i
+print array:
+a b 
+c d e 
+f g h i 
+
+
+
+Every possible combination of array:
+a c f 
+b c f 
+a d f 
+b d f 
+a e f 
+b e f 
+a c g 
+b c g 
+a d g 
+b d g 
+a e g 
+b e g 
+a c h 
+b c h 
+a d h 
+b d h 
+a e h 
+b e h 
+a c i 
+b c i 
+a d i 
+b d i 
+a e i 
+b e i 
