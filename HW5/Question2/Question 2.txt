@@ -1,0 +1,81 @@
+1a. 
+Actual Method called is: E
+This is an example of: overloading
+
+Output: Woof, woof, woof!
+public String call(int k) is being called from the dog class
+
+
+
+1b.
+Actual Method called is: G
+This is an example of: overriding
+
+Output: I'm a cat, go away!
+public String toString() is being called from the cat class
+
+
+
+1c.
+Actual Method called is: Error!
+This is an example of: it-was-an-error!
+
+Output: Error
+public String call() is undefined for Object class, which is the declared type
+
+
+
+1d. 
+Actual Method called is: a method from the Object class
+This is an example of: inheritance
+
+Output: hashcode value of pet object
+toString() is being called from the object class 
+
+
+
+1e.
+Actual Method called is: C
+This is an example of: overriding
+
+Output: woof!
+public String call() is called from the dog class
+
+
+
+1f.
+Actual Method called is: H
+This is an example of: overloading
+
+Output: Come here, kitty? ... Don't waste my time.
+public String toString(String b) is called from the cat class
+
+
+
+1g. 
+Actual Method called is: Error!
+This is an example of: it-was-an-error!
+
+Output: Error
+public String call(int) is undefined for cat class and all the classes it inherits from
+
+
+
+1h.
+Actual Method called is: B
+This is an example of: inheritance
+
+Output: four
+public String feet() is called from the Pet class 
+
+
+
+1i. 
+Actual Method called is: Error!
+This is an example of: it-was-an-error!
+
+Output: Error
+public String call(int) is undefined for the Pet class, which is the declared type
+
+
+

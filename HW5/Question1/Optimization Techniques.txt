@@ -1,0 +1,5 @@
+http://www.precisejava.com/javaperf/j2se/Loops.htm
+
+- I changed loop index variable from Long to Int 
+
+- took out Math.pow method call as method calls are very costly and time decreased by almost 200 milliseconds
