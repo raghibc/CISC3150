@@ -1,0 +1,25 @@
+Give me the number of queens you have Ill give you the solutions
+5
+Q . . . . 
+. . Q . . 
+. . . . Q 
+. Q . . . 
+. . . Q . 
+
+. Q . . . 
+. . . Q . 
+Q . . . . 
+. . Q . . 
+. . . . Q 
+
+. . Q . . 
+Q . . . . 
+. . . Q . 
+. Q . . . 
+. . . . Q 
+
+. . . Q . 
+Q . . . . 
+. . Q . . 
+. . . . Q 
+. Q . . . 
