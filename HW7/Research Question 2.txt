@@ -1,0 +1,41 @@
+SoQuestion 2:
+Research why you're able to call the default implementation of a method in 
+an interface with some weird syntax. Here's the code:
+
+public class blah{
+	public static void main(String[] args){
+		A a = new A();
+		a.someMethod();
+	}
+}
+
+interface myinterface{
+	default public void sayHello(){
+		System.out.println("Hello");
+	}
+}
+
+class A implements myinterface{
+	public void someMethod(){
+		myinterface.super.sayHello();
+	}
+}
+
+Again, your answer must provide sources.
+
+---------------------------------------------------------------------------------
+
+Default methods were added so that interfaces could be extended by subclasses 
+without having to provide implementation. These methods are implemented in the 
+interface and then can be extended. 
+
+The reason for the syntax is because if a class implements multiple interfaces and 
+two or more interfaces contain the same default method or a default method conflicts
+with an abstract method, the java compiler gives an error. The method must be 
+overrided. class.super.method() can then be used to access the appropriate default  
+method. 
+
+
+Source: 
+https://stackoverflow.com/questions/48624927/why-do-we-need-super-keyword-to-call-default-interface-methods
+https://stackoverflow.com/questions/19976487/explicitly-calling-a-default-method-in-java/19976615

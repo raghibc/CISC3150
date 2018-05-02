@@ -1,0 +1,60 @@
+Research Questions:
+1) In our class we saw that the java compiler seems to consider the actual 
+type of an exception instead of just the declared type. Here's the code:
+
+class blah{
+	public void someMethod(){
+		try{
+			throw new NullPointerException();
+		}
+		catch(Throwable t){
+			System.out.println("Caught!");
+			throw t;
+		}
+	}
+}
+
+You'd think that this class wouldn't compile, because t is declared to be 
+Throwable and that's a checked exception, but the code compiles just fine 
+because the actual type of t is an unchecked exception. On the other hand, 
+if you were to throw a checked exception in the try block, the code will 
+fail to compile because 't' is now a checked exception that you failed to 
+declare in your method. Find out why this happens. Make sure that you 
+provide sources.
+
+-----------------------------------------------------------------------------------
+
+ANSWER:
+
+The Java compiler can determine that the exception thrown by the statement 
+throw e has to be from the try block, and the only exception thrown by the try block
+is NullPointerException. Even though the parameter of the catch clause, t, is type
+Throwable and therefore a checked exception, the compiler can determine that t is 
+an instance of NullPointerException. 
+
+Java SE 7 compiler verifies "when you declare 
+one or more exception types in a catch clause, and rethrow the exception handled 
+by this catch that the type of the rethrown exception meets the following conditions:
+1. The try block is able to throw it.
+2. There are no other preceding catch blocks that can handle it.
+3. It is a subtype or supertype of one of the catch clause's exception parameters."
+
+
+Source:
+https://docs.oracle.com/javase/7/docs/technotes/guides/language/catch-multiple.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
