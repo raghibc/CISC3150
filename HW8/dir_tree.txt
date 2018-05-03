@@ -1,0 +1,12 @@
+|_____C:\Users\raghib\Desktop\Computer Arch\Chapter_1.pdf
+|_____C:\Users\raghib\Desktop\Computer Arch\Chapter_2, Section 1-3.pdf
+|_____C:\Users\raghib\Desktop\Computer Arch\Computer Arch Notes.docx
+C:\Users\raghib\Desktop\Computer Arch\exam 2
+C:\Users\raghib\Desktop\Computer Arch\exam 3
+|_____C:\Users\raghib\Desktop\Computer Arch\Homework 3310 - What is a Computer, Chapters 1-2.pdf
+|_____C:\Users\raghib\Desktop\Computer Arch\hw answers.txt
+|_____C:\Users\raghib\Desktop\Computer Arch\Syllabus 3310.pdf
+|_____C:\Users\raghib\Desktop\Computer Arch\What is a Computer.pdf
+_____C:\Users\raghib\Desktop\Computer Arch\exam 3\A5 - ALU.pdf
+|_____C:\Users\raghib\Desktop\Computer Arch\exam 3\Chapter_2, Section 9-12 (1).pdf
+|_____C:\Users\raghib\Desktop\Computer Arch\exam 3\Homework 3310 - What is a Computer, Chapters 1-2, Appendix A.pdf
