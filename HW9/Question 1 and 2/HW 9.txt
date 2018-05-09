@@ -1,0 +1,35 @@
+In our class we went over the code posted at: 
+https://pastebin.com/dwZqBs4u
+But we ran into a bunch of problems.
+
+First, we were unable to instantiate the Object class. Explain that.
+
+
+
+We were unable to instantiate the Object class because the constructors
+of the producer and consumer classes both require a variable of the
+economy class type. You cannot pass an Object type when it a superclass 
+of the economy class. Also the producer and consumer classes both have a 
+run method in which they run the producer and consumer methods that are
+in the economy class. Because these methods are in the economy class they
+cannot be ran when the variable's actual type is Object, who's class does
+not have those methods. 
+
+
+
+...........................................................................
+
+Second, we saw that with the notifyAll() uncommented, and the keyword 
+synchonized removed from the method declarations, the program just died 
+without throwing any exceptions. Given that we are working with an 
+infinite loop here, that shouldn't have happened. Explain that.
+
+
+
+NotifyAll() is required to be called in a synchronized method or a
+synchronized block. The program dies without throwing any exceptions 
+is because they are being caught in the try catch blocks in the producer() 
+and consumer() methods and the run() methods, but the catch blocks have no 
+statement in them, alerting the user that the exception was caught. To fix 
+this you can add the printStackTrace() method in the catch blocks which 
+will output the exceptions and where they occurred and what caused them.
