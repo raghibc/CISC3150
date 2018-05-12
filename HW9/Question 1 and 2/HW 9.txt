@@ -12,7 +12,7 @@ economy class type. You cannot pass an Object type when it a superclass
 of the economy class. Also the producer and consumer classes both have a 
 run method in which they run the producer and consumer methods that are
 in the economy class. Because these methods are in the economy class they
-cannot be ran when the variable's actual type is Object, who's class does
+cannot be ran when the variable's actual type is Object, whose class does
 not have those methods. 
 
 
